@@ -11,8 +11,14 @@ function average(numeri) {
   return numeri.reduce((acc, num) => acc + num, 0) / numeri.length;
 }
 
+function isPalindroma(parola) {
+  const parolaInversa = parola.trim().split("").reverse().join("");
+  return parola.trim() === parolaInversa;
+}
+
 module.exports = {
   getInitials,
   createSlug,
   average,
+  isPalindroma,
 };
